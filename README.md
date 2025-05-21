@@ -84,7 +84,7 @@ CNOT = | `[[1, 0, 0, 0],
 
 ```
 q = Qubit(1, 0)  # состояние |0⟩
-print("Начальное состояние:", q) #Начальное состояние: 1.00+0.00j|0⟩ + 0.00+0.00j|1⟩
+print("Начальное состояние:", q) # Начальное состояние: 1.00+0.00j|0⟩ + 0.00+0.00j|1⟩
 visualize_qubit(q, "Нач. состояние |0⟩")
 
 ```
@@ -92,17 +92,31 @@ visualize_qubit(q, "Нач. состояние |0⟩")
 ![image](https://github.com/user-attachments/assets/66fc7309-285f-4f50-8453-4a6f59891e41)
 
 
+```
 q.apply_gate(pauli_x())
-print("После X-гейта:", q)
+print("После X-гейта:", q) # После X-гейта: 0.00+0.00j|0⟩ + 1.00+0.00j|1⟩
 visualize_qubit(q, "После X-гейта")
+```
 
+![image](https://github.com/user-attachments/assets/5a3ba199-1590-4e4a-b7af-ef932e6e4e2f)
+
+
+```
 q.apply_gate(pauli_y())
-print("После Y-гейта:", q)
+print("После Y-гейта:", q) # После Y-гейта: 0.00-1.00j|0⟩ + 0.00+0.00j|1⟩
 visualize_qubit(q, "После Y-гейта")
+```
 
+![image](https://github.com/user-attachments/assets/ff75d8e0-505f-45b2-8e1f-1f094f65d583)
+
+
+```
 q.apply_gate(pauli_z())
-print("После Z-гейта:", q)
+print("После Z-гейта:", q) # После Z-гейта: 0.00-1.00j|0⟩ + 0.00+0.00j|1⟩
 visualize_qubit(q, "После Z-гейта")
+```
+
+![image](https://github.com/user-attachments/assets/252cb929-91c1-43f5-a682-955b4aeddfe0)
 
 
 
